@@ -11,10 +11,10 @@
 */
 window.STOCK_DASHBOARD_CONFIG = {
   provider: "twelveData",
-  apiKey: "YOUR_TWELVE_DATA_API_KEY",
+  apiKey: "7d3bbcb15ca14721ab851e524156c665",
 
   // Start small on the free tier. The free plan has credit limits.
-  stocks: ["AAPL", "MSFT", "NVDA", "SCHD"],
+  stocks: ["TSLA", "SOFI", "NVDA", "SCHD", "QQQ", "SPY"],
 
   // How often the dashboard may auto-refresh quote data.
   refreshIntervalMinutes: 15,

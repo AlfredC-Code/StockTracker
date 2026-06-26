@@ -14,7 +14,7 @@ window.STOCK_DASHBOARD_CONFIG = {
   apiKey: "7d3bbcb15ca14721ab851e524156c665",
 
   // Start small on the free tier. The free plan has credit limits.
-  stocks: ["TSLA", "SOFI", "NVDA", "SCHD", "QQQ", "SPY"],
+  stocks: ["TSLA", "SOFI", "SPY", "QQQ"],
 
   // How often the dashboard may auto-refresh quote data.
   refreshIntervalMinutes: 15,

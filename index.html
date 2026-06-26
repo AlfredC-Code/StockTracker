@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stock Price Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Configurable stock tracker</p>
+        <h1>Stock Price Dashboard</h1>
+        <p class="subtitle">
+          Tracks your configured tickers with current price and performance over 24h, 7d, 1m, 3m, 6m, and 1y.
+        </p>
+      </div>
+      <div class="controls">
+        <button id="refreshButton" type="button">Refresh</button>
+        <p id="lastUpdated" class="last-updated">Not loaded yet</p>
+      </div>
+    </section>
+
+    <section id="setupMessage" class="setup hidden" aria-live="polite"></section>
+
+    <section class="card">
+      <div class="table-wrap">
+        <table aria-label="Stock price table">
+          <thead>
+            <tr id="tableHeader"></tr>
+          </thead>
+          <tbody id="stockTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h2>Configuration</h2>
+      <p>
+        Edit <code>config.js</code> to add or remove stocks. Add new table metrics in <code>app.js</code> inside the <code>METRICS</code> array.
+      </p>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

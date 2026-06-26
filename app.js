@@ -46,7 +46,7 @@ async function loadDashboard({ forceRefresh }) {
   clearMessage();
   renderLoadingRows();
 
-  if (!CONFIG.apiKey || CONFIG.apiKey === "YOUR_TWELVE_DATA_API_KEY") {
+  if (!CONFIG.apiKey || CONFIG.apiKey === "7d3bbcb15ca14721ab851e524156c665") {
     showMessage(`<strong>Setup needed:</strong> add your Twelve Data API key in <code>config.js</code>. The table below is sample data so you can see the layout.`);
     const demoRows = buildDemoRows();
     renderRows(demoRows);
